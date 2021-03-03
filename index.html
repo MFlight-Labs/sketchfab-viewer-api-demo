@@ -57,6 +57,7 @@
             <div id="annotations"></div>
         </div>
     </div>
+    <div id="content"></div>
     <div id="logoChange"></div>
     
     <script type="text/javascript">
@@ -123,9 +124,21 @@
                             console.log('Going to annotation', index);
                         }
                     });
+                    api.getAnnotation(index, (err, annoObj) => {
+                        if (!err) {
+                            printAnnotationContent(annoObj)
+                        }
+                    });
                 });
             });
         };
+
+        function printAnnotationContent(obj){
+            console.log(obj.content);
+            if(obj.content !== null){
+                document.getElementById('content').innerHTML = obj.content.rendered;
+            }
+        }
 
         function createChangeAnnotationsImageBtn(api){
             logoChange.innerHTML = '<button id="mof">Change Annotation Logos</button>';
