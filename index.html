@@ -17,28 +17,30 @@
         }
 
         #left-panel, #api-frame {
-            width: 640px;
-            height: 336px;
+            width: 750px;
+            height: 546px;
             margin-left: 24px;
+            margin-top: 30px;
             padding-top: 1px;
         }
 
         #right-panel {
-            width: 200px;
+            width: 600px;
             height: 450px;
         }
     }
 
     body {
         background-color: lightgrey;
-        font-family: sans-serif ;
+        font-family: inherit ;
     }
 
     button {
-        width: 120px;
-        height: 55px;
-        /*padding: 5px;*/
-        margin-bottom: 8px;
+        width: 220px;
+        height: 75px;
+        padding: 5px;
+        margin-bottom: 32px;
+        font-size: 20px;
         background-color: rgb(0, 0, 0);
         border: 3px solid rgb(177, 177, 177);
         font-family: "inherit";
@@ -67,7 +69,7 @@
     }
 
     #bottom-page {
-        margin-top: 22px;
+
         margin-left: 32px;
     }
 
@@ -88,13 +90,13 @@
 <body>
 <div class="topnav" style="background-color: black;">
     <div style="height: 14px; padding-top: 18px"><a
-            style=" color: lightgrey ;margin-left: 80px; font-size: 16px; font-family: Helvetica,Arial,sans-serif ; ">THE <strong
+            style=" color: lightgrey ;margin-left: 80px; font-size: 22px; font-family: Helvetica,Arial,sans-serif ; ">THE <strong
             style="color: white">MUSEUM </strong>OF <strong style="color: white">FLIGHT</strong> </a></div>
-    <h1 style=" background-color: rgb(47, 48, 144); height: 40px; color: #fafafa;text-align: center ; font-size: 18px; padding-top:7px; ">
-        Skechfab API and Matterport integration prototype
+    <h1 style=" background-color: rgb(47, 48, 144); height: 40px; color: #fafafa;text-align: center ; font-size: 22px; padding-top:7px;  ">
+        Sketchfab API and Matterport Integration Prototype
     </h1>
 </div>
-<main style="background-color: #fafafa; width: 850px; height: 430px; border-color: black; margin-left: 180px">
+<main style="background-color: #fafafa; width: 1050px; height: 730px; border-color: black; margin-left: 380px">
     <div id="row">
 
         <div id="left-panel">
@@ -107,27 +109,27 @@
             </div>
         </div>
         <div id="right-panel">
-            <h3 style="margin-left: 25px;  margin-top: 8px; font-size: 16px; font-family: inherit;" >  <strong> 3D Model Annotation </strong> </h3>
+            <h3 style="margin-left: 50px;  margin-top: 35px; font-size: 20px;" >  <strong> 3D Model Annotation </strong> </h3>
             <div id="annotations"></div>
 
-            <button id="addLogo" style="width: 120px; height: 55px; margin-left:42px; margin-top: -15px" onclick="addLogo()">Add Logo
+            <button id="addLogo" style="width: 220px; height: 75px; margin-left:42px; margin-top: -15px" onclick="addLogo()">Add Logo
             </button>
         </div>
 
     </div>
 
-    <div id="bottom-page" style="margin-top: -114px; font-size: 16px; font-family: inherit">
+    <div id="bottom-page" style="margin-top: 44px; font-size: 20px;>
         <p class="address" style="color: black;">The Museum of Flight, 9404 E. Marginal Way South, Seattle, <br> WA
-            98108-4097</p>
-        <p class="phone" style="color: black">206-764-5700
-            <a href="mailto:info@museumofflight.org" style="color: red">info@museumofflight.org</a>
-            <a href="/Contact/" style="color: red">Contact Us</a></p>
+    98108-4097</p>
+    <p class="phone" style="color: black">206-764-5700
+        <a href="mailto:info@museumofflight.org" style="color: red">info@museumofflight.org</a>
+        <a href="/Contact/" style="color: red">Contact Us</a></p>
     </div>
 
 </main>
 
-<footer style="margin-left: 15%">
-    <div class="col-sm-12 col-lg-6 col-lg-pull-6" style="margin-top: 1%; font-size: 14px">
+<footer style="margin-left: 21%">
+    <div class="col-sm-12 col-lg-6 col-lg-pull-6" style="margin-top: 1%; font-size: 17px">
         <div class="legal"><span>©2021. The Museum of Flight</span> — <span>All Rights Reserved.</span></div>
     </div>
 </footer>
